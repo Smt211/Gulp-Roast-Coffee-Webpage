@@ -1,0 +1,186 @@
+/* General Styles */
+body,
+html {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Centered Top Logo */
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #082B59;
+}
+
+.top-header .logo {
+    width: 200px;
+    padding-top: 20px;
+}
+
+/* Horizontal Navigation Bar */
+.navbar {
+    background-color: #082B59;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #F2F2F2;
+    text-decoration: none;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    display: inline-block;
+}
+
+.navbar ul li a:hover {
+    background-color: #D98555;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main Content Section */
+.main-content {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+}
+
+/* Transparent Text Overlay */
+.text-overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 900px;
+    text-align: left;
+    padding-top: 40px;
+    border-radius: 10px;
+}
+
+/* Flex container for text and image */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Text Content Styling */
+.text-content {
+    flex: 1;
+    margin-right: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.text-overlay h1 {
+    font-size: 3em;
+    color: #59331D;
+    margin: 0;
+    font-family: "Lobster", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.text-overlay p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Contact Us */
+.heading {
+    background-color: #59331D;
+    padding: 15px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.heading:hover {
+    background-color: #A86740;
+}
+
+.heading a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
+/* Image and Caption beside text */
+figure {
+    max-width: 300px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #4A4A4A;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #131D26;
+    color: #F2F2F2;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+footer a {
+    color: #F2F2F2;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #D98555;
+}
